@@ -1,0 +1,174 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgb(18, 18, 18);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.navlinks {
+    display: flex;
+    padding: 20px; 
+    margin: 0; 
+    justify-content: center;
+}
+
+.navlinks li {
+    margin: 0; 
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.navlinks a {
+    color:  #c6c1c1;  
+    text-decoration: none;
+    padding: 10px;
+    display: block; 
+}
+
+.navlinks a:hover {
+    color: black; 
+    background-color: #dedbdb;
+    border-radius: 25px; 
+}
+
+#symbol {
+    margin-right: 0;
+    margin-left: 0px;
+    padding: 0px;
+    font-size: 24px;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 20%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; 
+    color: rgb(244, 236, 236);
+}
+
+
+
+#light a:hover {
+    color: rgb(142, 134, 134)
+}
+
+#light a{
+    display: flex;
+    font-size: 24px; 
+    color: whitesmoke;
+    justify-content: flex-start;
+    padding-left: 0px;
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#profhead {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #bebbbb;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.devprof {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 89%;
+}
+
+.devprof .griditem3 {
+    position: relative;
+}
+
+.devprof #htmllogo {
+    width: 125px;
+}
+
+.devprof #csslogo {
+    width: 75px;
+    margin-left: 30px;
+}
+
+.devprof #jslogo {
+    position: relative;
+    width: 125px;
+}
+
+.devprof #soonlogo {
+    position: absolute;
+    width: 80%;
+    right: 12%;
+    top: 30%;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .navlinks {
+        padding: 20px 80px;
+    }
+
+    .navlinks li {
+        padding: 5px 20px;
+    }
+
+    .introduction p {
+        color: #202020;
+        margin: 10px;
+        width: 60%;
+    }
+
+    html {
+        padding-left: 80px;
+    }
+
+    .devprof #soonlogo {
+        position: absolute;
+        width: 60%;
+        right: 40%;
+        top: 30%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        padding-left: 450px;
+    }
+
+
+
+    nav {
+        width: 50%;
+    }
+
+    .devprof {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 66%;
+    }
+}
