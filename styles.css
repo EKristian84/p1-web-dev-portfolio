@@ -1,219 +1,178 @@
+/* pang lahat */
 * {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    font-style: normal;
-    width: 100%;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: #00BFFF; /* Neon Blue text */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top to allow scrolling */
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
 }
 
-.navlinks {
-    display: flex;
-    padding: 20px; 
-    margin: 0; 
-    justify-content: center;
+/* Batcomputer container */
+.batcomputer {
+  width: 80%;
+  height: 90%;
+  max-height: 100%; /* Allow for the full height of the page */
+  border: 5px solid #00BFFF;
+  padding: 20px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent bg */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* Make the container scrollable */
 }
 
-.navlinks li {
-    margin: 0; 
-    font-size: 20px;
-    padding-top: 5px;
+/* Title (Batputer Bat-abase) */
+#batheader {
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Align text and icon vertically */
+  justify-content: center;
+  gap: 10px; /* Add space between icon and text */
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-.navlinks a {
-    color:  #656363; 
-    text-decoration: none;
-    padding: 10px;
-    display: block; 
+/* Baticon styling */
+#baticon {
+  width: 120px; /* Increase the size by 3 times */
+  height: auto;
+  margin-right: 10px; /* Space between icon and text */
 }
 
-.navlinks a:hover {
-    color: black; 
-    background-color: #dedbdb;
-    border-radius: 25px;
+/* Glow animation for text */
+@keyframes glow {
+  0% {
+      text-shadow: 0 0 10px #00BFFF, 0 0 20px #00BFFF;
+  }
+  100% {
+      text-shadow: 0 0 30px #00BFFF, 0 0 40px #00BFFF, 0 0 60px #00BFFF;
+  }
 }
 
-#symbol {
-    margin-right: 0;
-    margin-left: 0px;
-    padding: 0px;
-    font-size: 24px;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    width: 20%;
-    border: none;
-    background-color: transparent;
-    cursor: pointer; 
+/* Search container */
+.search-container {
+  display: flex; /* Align input and button horizontally */
+  justify-content: center; /* Center the elements */
+  margin-bottom: 20px;
+  gap: 10px; /* Space between the input box and button */
 }
 
-
-
-#light a:hover {
-    color: black;
+/* Input field */
+#batSearch {
+  background-color: transparent;
+  border: 2px solid #00BFFF;
+  color: #00BFFF;
+  font-size: 1em; /* Smaller font size */
+  padding: 8px 12px; /* Smaller padding */
+  width: 70%;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease;
+  height: 40px; /* Smaller height */
 }
 
-#light a{
-    display: flex;
-    font-size: 24px; 
-    color: gray;
-    justify-content: flex-start;
-    padding-left: 0px;
-    margin-right: 20px;
-    cursor: pointer;
-    font-weight: bold;
-
+/* Focus effect on input */
+#batSearch:focus {
+  border-color: #00FFFF;
 }
 
-.introduction h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 25px;
-    color: #202020;
-    margin-left: 10px;
-    margin-right: 5px;
-    margin-top: 50px;
+/* Button styling */
+#batBtn {
+  padding: 6px 15px; /* Reduced padding to fit text */
+  background-color: transparent;
+  border: 2px solid #00BFFF;
+  color: #00BFFF;
+  font-size: 0.9em; /* Slightly smaller font size */
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  height: 40px; /* Keep the button height consistent */
+  white-space: nowrap; /* Prevent text from wrapping into a new line */
+  display: inline-flex; /* Ensure button's content is aligned horizontally */
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Horizontally center the text */
 }
 
-.introduction p {
-    color: #656363;
-    margin: 10px;
-    width: 80%;
+/* Hover effect for button */
+#batBtn:hover {
+  background-color: #00BFFF;
+  color: black;
+  border: 2px solid #00FFFF;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+/* Loading message */
+#loadingMessage {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #00FFFF;
 }
 
-.proflinks{
-    margin-top: 30px;
-}
-.proflinks li {
-    display: inline;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.proflinks a{
-    color:  black; 
-    text-decoration: none;
-    background-color:rgb(246, 243, 243);
-    border-radius: 25px;
-    border: 4px;
-    padding: 6px 8px;
+/* Character details section */
+.character-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
 }
 
-.proflinks a:hover {
-    background-color: #dcdbdb;
-    color: black
+/* Left side: Character image */
+#batImage img {
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
-.proflinks span {
-    color: gray;
+/* Right side: Character details */
+.character-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  color: #00BFFF;
 }
 
-a {
-    text-decoration: none;
+#batName, #batAlias, #batAlive, #batRole, #batDescription, #batGender, #batAbilities {
+  margin: 10px 0;
+  font-size: 1.2em;
 }
 
-img {
-    width: 50%;
+/* Glowing effect for character name */
+#batName {
+  font-size: 2em;
+  animation: flicker 3s infinite;
 }
 
-.projectdiv p {
-    color: #656363;
-    margin: 10px;
-    width: 80%;
+/* Flickering effect for name */
+@keyframes flicker {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0.3;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
-.projectdiv img {
-    height: auto;
-    width: 300px;
-    margin-top: 10px;
-    padding-left: 30px;
-}
-
-#projsechead {
-    margin-top: 50px;
-    color: #414040;
-    padding-left: 10px;
-}
-
-.projectdiv h2 {
-    padding-left: 30px;
-}
-
-.projectdiv p {
-    padding-left: 20px;
-}
-
-
-
-@media screen and (min-width: 768px) {
-    .projectsection {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: 1fr 1fr;
-        width: 80%;
-    }
-
-    .navlinks {
-        padding: 20px 80px;
-    }
-
-    .navlinks li {
-        padding: 5px 20px;
-    }
-
-    .introduction p {
-        color: #656363;
-        margin: 10px;
-        width: 60%;
-    }
-
-    html {
-        padding-left: 80px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    html {
-        padding-left: 450px;
-    }
-
-    nav {
-        width: 50%;
-    }
-
-    .introduction {
-        width: 60%;
-    }
-
-    .projectsection {
-        width: 50%
-    }
-
-    .projectdiv img {
-        padding-left: 0px;
-    }
-
-    .projectdiv h2 {
-        padding-left: 0px;
-    }
-
-    .projectdiv p {
-        padding-left: 0px;
-        margin: 0px
-    }
+/* Enable scrolling if content exceeds */
+.batcomputer {
+  overflow-y: auto; /* Allows scrolling within the Batcomputer container */
+  max-height: 90vh; /* Limit the height to 90% of the viewport to ensure scrolling */
 }

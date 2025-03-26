@@ -1,80 +1,65 @@
-# Web Dev Portfolio
-
-A personal website can be a great space to express yourself, showcase your work and skills.
+# Vanilla JS App
 
 ## Learning Objectives
 
-- Express yourself creatively
-- Develop your personal branding and online presence
-- Apply fundamental UI/UX principles
-- Design with mobile responsiveness in mind
-- Build a functional and responsive website using HTML and CSS
+- Have fun building a web app that uses an API.
+- Strengthen your Javascript skills.
+- Gain exposure on integrating with APIs.
+- Continue applying the HTML and CSS skills you have.
 
-As a first project, the goal is to build a Minimum Viable Product (MVP) version of your personal website. As the bootcamp progresses, you can add enhancements on this and you should enlist new skills and projects.
+The primary goal here is to practice your new learned Javascript skills. Don't be afraid to fail and get lots of bugs - that's the best way to learn!
 
-## Sample Projects
+Your are expected to build something from scratch and on your own. Copying someone else's project will not serve you well. We are not here to just get good grades. We are here to learn critical skills to be able to build our own dreams - new job, our own app, our own startup. Mindlessly copying someone else's work will NOT move you towards those goals.
 
-Here are some example projects from our alumni for inspiration 💜
+> 🚨 _Academic dishonesty is a ground for a student to be relieved/terminated from the bootcamp._
 
-- [Miguel](https://miguel-de-leon.netlify.app/)
-- [JC](https://jc-caballero-dev-portfolio.netlify.app/)
-- [Mars](https://portfolio-ha9z.onrender.com/)
+## Some ideas if you are feeling stuck
+
+- What is an application that you wish you have to ease up your day to day?
+- What are your interests and hobbies? Is there a specific problem or need related to your interests that could be addressed with a web application?
+- Are there any common challenges or pain points people face that your application could help alleviate? Can your application simplify a process or provide a solution to a problem?
+
+> _NOTE: Get approval of your App idea, scope, and user stories from your instructor before coding._
+
+## Start Your Project
+
+1. Navigate to the project, you can use `cd`
+
+```sh
+cd p2-js-api-app
+```
+
+2. Start by installing the dependencies, run:
+
+```sh
+npm install
+```
+
+3. Run your application
+
+```sh
+npm run dev
+```
+
+4. Open your browser, usually in [http://localhost:8080]
 
 ## User Stories
 
-A user story is a statement of what a user should be able to do when they use an application. They are features of the application.
-
-User stories are typically written in the following format:
-
-```
-As a <type of user>, I can <some goal>.
-```
-
-It speaks clearly what a user can do. And it is clear from a developer's perspective what needs to be done and why.
-
-User stories often comes with acceptance criteria that outlines a user stories' details.
-
-The below are the user stories for this project:
-
-## As a user, I can learn information about you.
-
-### Acceptance Criteria
-
-- I can see your full name.
-- I can read a short description of you.
-- (Optional) I can see a photo of you.
-
-### As a user, I can learn about your skills.
+### As a user, I know what the app is about. (5 points)
 
 #### Acceptance criteria
 
-- I can click a link to download your resume.
-- I can see a list of technologies and stacks that you use. Each technology and stack should be represented by an image icon/logo with an alt text.
+- I can see the title of the app.
+- I can know how to use the app.
 
-### As a user, I can see how to contact or follow you.
-
-#### Acceptance criteria
-
-- I can click a link to open a new email using my default email client.
-- I can click a link to visit your GitHub or Gitlab page.
-- I can click a link to visit your LinkedIn page.
-
-### As a user, I can navigate your site.
+### As a user, I can interact with the app. (20 points)
 
 #### Acceptance criteria
 
-- There is a navigation UI that has links to all of the pages or sections.
-- When I click on a link in the navigation UI, I can view that page/section.
-- The navigation should appear in a consistent place across pages and is easy to use.
-
-### As a user, I can experience an interactive UI.
-
-#### Acceptance criteria
-
-- I can experience the website on mobile, tablet and desktop screens.
-- No image stretching.
-- No information or error logs are seen on the browser's console.
-- No dead links.
+- I can interact with the app on its intended functionality.
+- I can give an input and get an output from the app as per its intended functionality.
+- I can get responses quickly and smoothly to my interactions, providing a seamless user experience.
+- I can receive clear error messages if something goes wrong, along with guidance on how to resolve the issue.
 
 ## Technical Specifications
 
@@ -82,19 +67,31 @@ Technical specifications are requirements on the implementation or design of a s
 
 The below are the technical specifications for this project:
 
+<<<<<<< HEAD
 - Code should have both grid AND flexbox implementation.
 - Use of pure CSS, no libraries or frameworks.
 - Use of color contrast that is accessible.
 - Use of 2-3 font variations.
 - Use of Uplift Code Camp's HTML and CSS coding standards.
 - Use of Uplift Code Camp's committing standards.
+=======
+- Use of vanilla Javascript.
+- Code should have async/await functions.
+- Code should have array, object or string operations.
+- Code should make use of a publicly available API.
+- Code should have single responsibility functions.
+- Use of Uplift Code Camp's HTML, CSS and Javascript coding and committing standards.
+>>>>>>> 1064435 (First commit - Deploy to GitHub Pages)
 
 ## Grading Rubric
 
 ### 30 points on user stories
 
 - Each user story's acceptance criteria should be met.
+<<<<<<< HEAD
 - Point for each user story = 30 / number of user stories
+=======
+>>>>>>> 1064435 (First commit - Deploy to GitHub Pages)
 
 ### 30 points on technical specifications
 
@@ -105,6 +102,7 @@ The below are the technical specifications for this project:
 
 - A DRY code.
 - Use of proper spaces and indentation.
+<<<<<<< HEAD
 - Use of appropriate semantic tags.
 - Use of external CSS.
 - Use of minified images.
@@ -121,13 +119,49 @@ Clear, concise and succinct project presentation.
 - The blog section should be in a different page from the rest of the personal website with a link from the navigation UI.
 
 ### 10 points for deploying
+=======
+- Use of best practices.
+
+### 10 points on presentation
+
+- Clear, concise and succinct project presentation. Check out the guide on [Preparing for your Project Presentation](https://moodle.upliftcodecamp.com/moodle/mod/page/view.php?id=4905).
+
+### Bonus points and stretch goals
+
+#### 10 points for a blog/vlog
+
+- Write a blog/vlog published on your personal website or any blog/vlog site about how you built your project. Must be accessible from the public internet.
+
+#### 10 points for using an AI-based API
+
+- Use an AI-based API from Google, OpenAI or Cohere.
+
+#### 10 points for deploying
+>>>>>>> 1064435 (First commit - Deploy to GitHub Pages)
 
 - As a user, I can access your website from the public internet.
 
 ## Submitting
 
+<<<<<<< HEAD
 **Submission name** = `p1-web-dev-portfolio`
 
 - Add, commit and push your changes. Make sure to add only the relevant files to the homework.
 - Do a merge request, use the Submission name as the Merge Request title, and do not forget to write a proper description.
 - Submit a link to your Merge request to our LMS
+=======
+Submission name = `p2-js-api-app`
+
+1.  Add, commit and push your changes. Make sure to add only the relevant files to the homework.
+2.  Do a merge request, use the Submission name as the Merge Request Title and do not forget to write a proper description.
+3.  Submit the link to your Merge Request.
+
+> _NOTE: Remember to git add, git commit and git push regularly._
+
+## Resources
+
+- [Google AI API products](https://cloud.google.com/products/ai?hl=en); check the ones with APIs
+- [List of Public APIs you can consider](https://github.com/public-apis/public-apis)
+- [Preparing for your Project Presentation](/uplift-code-camp/course-docs/fsw-specs/-/blob/main/guides/presentation-preps.md)
+- [Run Lighthouse in Chrome DevTools in less than 2 minutes](https://developer.chrome.com/docs/lighthouse/overview/#devtools)
+>>>>>>> 1064435 (First commit - Deploy to GitHub Pages)
